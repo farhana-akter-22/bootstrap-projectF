@@ -1,0 +1,160 @@
+@media(max-width:700px){
+    .testimonial-col{
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+.tastimonial{
+    width: 80%;
+    margin-top: auto;
+    padding-top: 100px;
+    text-align: center;
+    margin-left: 10%;
+}
+.testimonial-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    background-color: #b9d4df;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 35px;
+}
+.testimonial-col img{
+    display: flex;
+    height: 40px;
+    border-radius: 100%;
+}
+.tastimonial h5{
+    font-size: 25px;
+    color: #030341;
+    
+
+}
+.testimonial p{
+    font-size: 15px;
+}
+.testimonial-col h5{
+    font-size: 20px;
+    position: absolute;
+    margin-top: 70px;
+    margin-right: 270px;
+    margin-left: 60px;
+
+
+    
+}
+.testimonial-col p{
+    text-align: left;
+    margin-left: 15px;
+    padding: 0;
+    margin-bottom: 40px;
+    
+}
+.testimonial-col .fa{
+    color: #1111E8;
+}
+.testimonial-col .fas{
+    color: #1111E8;
+}
+.testimonial-col .far{
+    color: #1111E8;
+}
+@media(max-width:700px){
+
+}
+.contact{
+    width: 80%;
+    margin: 100px 110px;
+    background-image:url(image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 10px;
+}
+.contact{
+    background-color: black;
+    opacity:0.7;
+}
+.contact h1{
+    margin-bottom: 15px;
+    color: #350303;
+}
+@media(max-width:700px){
+
+}
+.footer{
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+    margin-left: 110px;
+    
+}
+.footer h2{
+    text-align: center;
+    color: #1a0e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 15px;
+    color: #172933;
+}
+.icons{
+    margin-bottom: 15px;
+}
+.icons .fab{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+
+
+
+<!--------------html!------------->
+ <section class="tastimonial">
+        <h5>What Our Students Says</h5>
+        <p>lorem ipsum color sit amet, consectetur adipiscing alit.</p>
+        <div class="row">
+            <div class="testimonial-col">
+            <img src="image/user1.jpg" alt="library picture" style="border-radius: 15px 15px 15px 15px">
+            <p>lorem ipsum color sit amet, consectetur adipiscing alit.alternative<br>lorem ipsum color sit amet, consectetur adipiscing alit.</p>
+            <h5>Christine Berkley</h5>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+             </div>
+            <div class="testimonial-col">
+            <img src="image/user2.jpg" alt="busketball picture"/>
+            <p>lorem ipsum color sit amet, consectetur adipiscing alit.glycogenesis<br>lorem ipsum color sit amet, consectetur adipiscing alit.</p>
+            <h5>David Biyer</h5>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        </div>
+ </section>
+ <section class="contact">
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+ </section>
+ <section class="footer">
+    <h2>About Us</h2>
+    <p>Since its creation on January 15, 2001, Wikipedia has grown into the world's<br>largest reference website attracting over a billion visitors monthly. It currently has more than fifty-nine million articles in more than 300 languages</p>
+ <div class="icons">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin"></i>
+    <p>Made With <i class="far fa-heart"></i> By Easy Tutorials</p>
+
+ </div>
+</section>
