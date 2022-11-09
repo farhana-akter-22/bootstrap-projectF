@@ -8,41 +8,72 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"crossorigin="anonymous"/>
-   
+
   <title>Glozzom</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <!-- <nav
+      class="navbar navbar-dark bg-dark navbar-expand-md fixed-top"
+      uk-sticky="top: 200; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Glozzom</a>
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+       <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top " uk-sticky="top: 500; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
         <div class="container">
-          <a class="navbar-brand" href="#">Glozzom</a>
-          <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-links">
+          <a class="navbar-brand" href="index.html">Glozzom</a>
+          <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-nav">
 
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="nav-links" class="nav-nav-links collapse navbar-collapse d-block justify-content-end list-unstyled">
-            <ul class="nav-links d-block d-flex">
+        <div id="navbar-nav" class="collapse navbar-collapse show justify-content-end">
+            <ul class="nav-links d-flex list-unstyled">
               <li class="nav-item">
-                <a class="nav-link text-white active text-decoration-none" href="index.html">HOME</a>
+                <a class="nav-link text-white active" href="index.html" id="nav-lia">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50 text-decoration-none" href="about.html">ABOUT US </a>
+                <a class="nav-link text-white-50" href="about.html">ABOUT US </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50 text-decoration-none" href="services.html">SERVICES </a>
+                <a class="nav-link text-white-50" href="services.html">SERVICES </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50 text-decoration-none" href="blog.html">BLOG </a>
+                <a class="nav-link text-white-50" href="blog.html">BLOG </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50 text-decoration-none" href="contact.html">CONTACT</a>
+                <a class="nav-link text-white-50" href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div>
-        <div id="carouselid" class="carousel slide" data-bs-ride="carousel">
 
+
+        <div id="carouselid" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselid" data-bs-slide-to="0" class="active"></button>
@@ -91,14 +122,49 @@
             </div>
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselid" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+              <i class="fa fa-chevron-left fs-5" aria-hidden="true"></i>
+              <!-- <span class="carousel-control-prev-icon"></span> -->
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselid" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+              <i class="fa fa-chevron-right fs-5" aria-hidden="true"></i>
+              <!-- <span class="carousel-control-next-icon"></span> -->
             </button>
           </div>
           </div>
-            <div class="container pt-5 px-5 mb-5 text-center">
+          <div>
+            <div class="container d-block text-center justify-content-center px-5">
+           <div class="row py-5 px-5">
+            <div class="col-md-4"><i class="fa fa-gears fs-1 fw-bold"></i>
+              <h2 class="fw-lighter">Truning Gear</h2>
+              <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus<br>veritatis fugiat animi pariatur.</p>
+            </div>
+            <div class="col-md-4"><i class="fa fa-cloud fs-1 fw-bold"></i>
+              <h2 class="fw-lighter">Making Money</h2>
+              <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus<br>veritatis fugiat animi pariatur.</p>
+            </div>
+            <div class="col-md-4"><i class="fa fa-plus fs-1 fw-bold"></i>
+              <h2 class="fw-lighter">Making Money</h2>
+              <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus<br>veritatis fugiat animi pariatur.</p>
+            </div>
+           </div>
+          </div>
+            <!-- <div class="container d-grid d-block text-center pt-5 pb-5 gap-4 gap-md-2 justify-content-center">
+              <div><i class="fa fa-gears fs-1"></i>
+                <h2 class="fw-lighter">Truning Gear</h2>
+                <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus veritatis fugiat animi pariatur.</p>
+              </div>
+              <div>
+                <i class="fa fa-cloud fs-1"></i>
+                  <h2 class="fw-lighter">Sending Money</h2>
+                  <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus veritatis fugiat animi pariatur.</p>
+              </div>
+              <div><i class="fa fa-plus fs-1"></i>
+                <h2 class="fw-lighter">Making Money</h2>
+                <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus veritatis fugiat animi pariatur.</p>
+              </div>
+            </div>
+          </div> -->
+            <!-- <div class="container pt-5 px-5 mb-5 text-center">
               <div class="row1 d-flex gap-5 pt-3 justify-content-center">
                 <div class="col-1 w-25 d-block">
                   <i class="fa fa-gears fs-1"></i>
@@ -116,34 +182,40 @@
                   <p class="fw-lighter fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, totam accusamus veritatis fugiat animi pariatur.</p>
                  </div>
               </div>
-            </div>
-       <div class="pb-4 pt-4 justify-content-center" style="background: rgba(0, 0, 0, 0.5) url(image/girl3.jpg); background-blend-mode: darken; background-size: cover; background-position: center;">
+            </div> -->
+            <!-- <div class="pb-4 pt-4 justify-content-center">
+              <img src="image/girl3.jpg">
+              <h2 class="text-center pt-4 fs-2 text-white fw-normal">Are You Ready To Get Started?</h2>
+              <p class="text-center pt-3 pb-4 text-white fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit<br> iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!</p>
+           </div> -->
+       <!-- real one--- <div class="pb-4 pt-4 justify-content-center" style="background: rgba(0, 0, 0, 0.5) url(image/girl3.jpg); background-blend-mode: darken; background-size: cover; background-position: center;">
           <h2 class="text-center pt-4 fs-2 text-white fw-normal">Are You Ready To Get Started?</h2>
           <p class="text-center pt-3 pb-4 text-white fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit<br> iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!</p>
-       </div>
-
-       <!-- <div>
-        <div class="pt-5">
-          <img src="image/girl3.jpg" height="400px" width="100px" class="img-fluid">
-          <h2 class="text-center pt-4 fs-2 text-white fw-normal">Are You Ready To Get Started?</h2>
-          <p class="text-center pt-3 pb-4 text-white fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit<br> iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!</p>
-        </div>
        </div> -->
+       <div class="justify-content-center" style="background: url(image/girl3.jpg); background-attachment: fixed; position: relative; background-size: cover; background-position: center;">
+       <div class="py-5" style="background:rgba(0, 0, 0, 0.5)"><h2 class="text-center pt-4 fs-2 text-white fw-normal">Are You Ready To Get Started?</h2>
+        <p class="text-center pt-3 pb-4 text-white fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit<br> iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!</p></div>
+     </div>
+     
 <!-- need to do with grid property -->
-        <div class="container ps-5 pt-5 pb-5">
-           <div class="row d-flex  gap-3 ps-5">
-            <div class="col w-50 pt-5">
+        <div class="container ps-md-5 pt-5 pb-5">
+           <div class="row d-flex gap-md-3 ps-md-5">
+            <div class="col w-50 pt-md-5">
               <h2 class="text-black fw-light fs-3">Lorem Ipsum Dolor Sit</h2>
               <p class="fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque<br> dignissimos recusandae nobis reiciendis voluptatem quae iusto,<br>fugiat itaque iste explicabo.</p>
               <a href="#" class="btn btn-outline-dark">Read More</a>
             </div>
-            <div class="col-2 w-50"><img src="image/monitor.jpg"></div>
+            <div class="col-2 w-50"><img src="image/monitor.jpg" class="img-fluid"></div>
            </div>
         </div>
-      <div class="pb-5 pt-5 w-100 pt-4 text-center justify-content-center align bg obj-fit-cover" style="background:rgba(0, 0, 0, 0.7) url(image/people.jpg); background-blend-mode: darken; background-size: cover; background-repeat: no-repeat; background-position: center; max-width: 100%;">
-        <a href="https://youtu.be/3olM-9vcd4M"><i class="fa fa-play fs-1 fw-bolder text-danger pb-4"></i></a>
-        <h1 class="pb-3">Bootstrap 4 Crash Course</h1> 
-      </div>
+        <div class="justify-content-center" style="background: url(image/people.jpg); background-attachment: fixed; position: relative; background-size: cover; background-position: center;">
+          <div class="py-5 text-center" style="background:rgba(0, 0, 0, 0.5)"><a href="https://youtu.be/3olM-9vcd4M"><i class="fa fa-play fs-1 fw-bolder text-danger pb-4"></i></a>
+            <h1 class="pb-3">Bootstrap 4 Crash Course</h1></div>
+        </div>
+      <!-- <div class="pb-5 pt-5 w-100 pt-4 text-center justify-content-center align bg obj-fit-cover" style="background: url(image/people.jpg); background-blend-mode: darken; background-size: cover; background-repeat: no-repeat; background-position: center; max-width: 100%;">
+       <div class="py-5" style="background:rgba(0, 0, 0, 0.7)"><a href="https://youtu.be/3olM-9vcd4M"><i class="fa fa-play fs-1 fw-bolder text-danger pb-4"></i></a>
+        <h1 class="pb-3">Bootstrap 4 Crash Course</h1></div>
+      </div> -->
       <div class="container">
         <div class="row">
           <div class="text-center pt-5 pb-2">
